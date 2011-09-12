@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF8" />
+     <title>Manager</title>
+	 <link rel="stylesheet" type="text/css" href="css/css.css" /> 
+	<script src="js/sorttable.js"></script>
+	<link type="text/css" href="css/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+	<script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+	<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+	
+ <script type="text/javascript">
+ $(function(){
+ $("#data1").datepicker({
+ constrainInput: "false",
+ rangeSelect: "true",
+ dateFormat: "dd-mm-yy",
+ altFormat: "dd-mm-yy",
+ showOn: "both"
+ //buttonImageOnly: "true",
+ //buttonImage: "img/calendar.png"
+ 
+ });
+ $("#data2").datepicker({
+ constrainInput: "false",
+ rangeSelect: "true",
+ dateFormat: "dd-mm-yy",
+ altFormat: "dd-mm-yy",
+ showOn: "both"
+// buttonImageOnly: "true",
+ //buttonImage: "img/calendar.png"
+ 
+ }); 
+ });
+ </script>
+
+ 
+</head>
+<body>
+<h3>Система приема и обработки заявок</h3>
+<center>
+<p>
+Вы вошли, как <b><?php require ('who_sql.tpl'); ?></b>
+</p>
+<a href= "panel.php">[ Главная ]</a>
+<a href= "add.php">[ Добавить ]</a>
+<a href= "index.php?logout">[ Выйти ]</a>
+</center>
+<br />
